@@ -1,0 +1,311 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111111;
+    color: white;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: #181818;
+    padding: 25px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #f97316;
+}
+
+header h1 {
+    color: #ff8a00;
+    font-size: 25px;
+}
+
+/* CONTEÚDO */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.container > h2 {
+    color: #ff8a00;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* CARDÁPIO */
+
+.cardapio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.produto {
+    background: #202020;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid #393939;
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    border-color: #f97316;
+}
+
+.produto .emoji {
+    font-size: 55px;
+}
+
+.produto h3 {
+    color: #ff9b35;
+    margin: 12px 0;
+}
+
+.produto p {
+    color: #cccccc;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.adicionais {
+    background: #292929;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 18px 0;
+}
+
+.adicionais strong {
+    color: #ff9b35;
+}
+
+.adicionais label {
+    display: block;
+    margin-top: 12px;
+    color: #eeeeee;
+}
+
+.adicionais input {
+    accent-color: #f97316;
+}
+
+/* BOTÕES */
+
+button {
+    background: #f97316;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffad33;
+    color: #171717;
+    transform: scale(1.03);
+}
+
+/* CARRINHO */
+
+.carrinho {
+    background: #202020;
+    padding: 30px;
+    border-radius: 18px;
+    margin-top: 45px;
+    border: 1px solid #444;
+}
+
+.carrinho h2 {
+    color: #ff8a00;
+    margin-bottom: 20px;
+}
+
+.carrinho-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+}
+
+.carrinho-item p {
+    color: #cccccc;
+    margin-top: 7px;
+}
+
+.carrinho-item button {
+    background: #b83225;
+    margin-top: 10px;
+}
+
+#total {
+    color: #ffad33;
+    margin: 25px 0;
+    font-size: 24px;
+}
+
+.carrinho > button {
+    width: 100%;
+    padding: 17px;
+    font-size: 16px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #181818;
+    text-align: center;
+    padding: 30px;
+    color: #aaaaaa;
+    margin-top: 50px;
+    border-top: 2px solid #f97316;
+}
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+    header {
+        padding: 22px 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .cardapio {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    .carrinho {
+        padding: 20px;
+    }
+}
+
+/* BANNER PRINCIPAL */
+
+.banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #111;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* BOTÃO REAL SOBRE O BOTÃO DA IMAGEM */
+
+.botao-banner {
+    position: absolute;
+
+    left: 51%;
+    bottom: 8%;
+
+    width: 44%;
+    height: 17%;
+
+    border-radius: 100px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.botao-banner:focus-visible {
+    outline: 4px solid white;
+    outline-offset: 3px;
+}
+
+/* CARDÁPIO */
+
+html {
+    scroll-behavior: smooth;
+}
+
+#cardapio {
+    scroll-margin-top: 20px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* CAPA INICIAL */
+
+.topo {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+.topo h1 {
+    color: #ff7a00;
+    font-size: 28px;
+}
+
+.capa {
+    min-height: 85vh;
+    background:
+        linear-gradient(rgba(17, 17, 17, 0.02), rgba(17, 17, 17, 0.02)),
+        url("1fd9b45c-4aa1-446e-9e16-d93c45d24018.png") center / cover no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    padding: 30px;
+}
+
+.conteudo-capa {
+    position: absolute;
+    left: calc(64% - 10px);
+    top: calc(68% + 100px);
+}
+
+.conteudo-capa h2 {
+    color: #ff7a00;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.conteudo-capa p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.botao-capa {
+    display: inline-block;
+    background: #ff7a00;
+    color: white;
+    width: 330px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.botao-capa:hover {
+    background: #e56800;
+    transform: scale(1.05);
+}

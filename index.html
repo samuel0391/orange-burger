@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Burger - Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍔 GREEN BURGER</h1>
+        <p>O melhor sabor da cidade!</p>
+    </header>
+
+    <main class="container">
+
+        <h2>Nosso cardápio</h2>
+
+        <section id="cardapio" class="cardapio"></section>
+
+        <section class="carrinho">
+            <h2>🛒 Seu pedido</h2>
+
+            <div id="itensCarrinho">
+                Seu carrinho está vazio.
+            </div>
+
+            <h3 id="total">Total: R$ 0,00</h3>
+
+            <button onclick="finalizarPedido()">
+                CONCLUIR PEDIDO
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Green Burger © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orange Burger</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BANNER PRINCIPAL -->
+    <section class="banner">
+
+        <img src="img/banner.png" alt="Orange Burger - Hambúrguer especial">
+
+        <!-- BOTÃO CLICÁVEL SOBRE A IMAGEM -->
+        <a href="#cardapio" class="botao-banner"
+           aria-label="Faça seu pedido">
+        </a>
+
+    </section>
+
+    <!-- CARDÁPIO -->
+    <main class="container" id="cardapio">
+
+        <h2>Nosso Cardápio 🍔</h2>
+
+        <section class="cardapio" id="produtos">
+        </section>
+
+        <section class="carrinho">
+            <h2>Seu pedido</h2>
+
+            <div id="itensCarrinho">
+                Seu carrinho está vazio.
+            </div>
+
+            <h3 id="total">Total: R$ 0,00</h3>
+
+            <button onclick="finalizarPedido()">
+                CONCLUIR PEDIDO
+            </button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
